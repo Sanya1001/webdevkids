@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tricks-style.css">
+    <script src="tricks-script.js" defer></script>
+    <title>The WebDev Kids: Tricks</title>
+</head>
+<body>
+    <div id="body">
+        <div id="mainh">
+            <div id="T" class="letter">T</div>
+            <div id="R" class="letter">R</div>
+            <div id="I" class="letter">I</div>
+            <div id="C" class="letter">C</div>
+            <div id="K" class="letter">K</div>
+            <div id="S" class="letter">S</div>
+        </div>
+        <div id="part1" class="body">
+            <div class="title">Responsive Design</div>
+            <div class="content">
+                Have you ever noticed a website look different on your laptop and on your phone?
+                Different devices have different widths or viewports; which means that our designs
+                might not look cool on every device. (Check out the welcome page of this website on 
+                your phones to see what I mean!) <br>
+                But we are designers and we are smart- we can make our designs adjustable to different 
+                devices, also called <span class="highlight">'responsive design'</span>.
+                <br>
+                How can you make your design responsive? <br>
+                My #1 tip is to always use a <span class="highlight">flex display</span>. Flex boxes are usually 
+                already responsive and do the work for you. <br>
+                Another general tip is to use the dev tools from Chrome. Right click and use the 
+                <span class="highlight">inspect</span> option. You can then change the width of the viewport 
+                and see how your webpage looks on different devices. <br>
+                The advanced trick is to make completely
+                <span class="highlight">different designs for different viewports</span> using @media query.
+                <br> <br>
+                Here's your challenge: <br><br>
+                <span class="challenge">
+                    Show items in a row on wider screens and in a column on smaller screens.
+                </span>
+            </div>
+        </div>
+        <div id="part2" class="body">
+            <div class="title">GitHub Pages</div>
+            <div class="content">
+                You are learning to make all these amazing websites, but what would be more amazing is 
+                if you could show them to your friends and family from the internet. And thanks to 
+                GitHub, you can! There are several paid hosting platforms that allow us to publish or
+                'host' our websites, but GitHub (with some constraints) lets us do this for free.
+                GitHub is an important tool for all developers and 
+                <span class="hightlight">GitHub Pages</span> is just one of its many features. Its 
+                constraints are that it is a static hosting service, but that's not a problem for us. 
+                <br> 
+                Visit <a href="http://github.com">GitHub</a> to get started by making an account.
+                Then create a new repository and name it <span class="highlight">username.github.io</span>.
+                Then upload your related files to the repository. Remember to name your main html file as 
+                index.html.
+                <br><br>
+                Here's your challenge: <br><br>
+                <span class="challenge">
+                    Host your website on GitHub Pages.
+            </div>
+        </div>
+        <div id="part3" class="body">
+            <div class="title">Dark Mode</div>
+            <div class="content">
+                This is an all time favorite of this generation. In execution,
+                <span class="highlight">Dark Mode</span> or pretty much any theme is very simple! 
+                All you need to do is to change the colors of your website upon the click of a button. 
+                Which means, we essentially have two tasks: <br>
+                1. Create a button (HTML) and track its click event (JS). <br>
+                2. Change the colors of the website (CSS/JS). <br>
+                My favorite way to do this is using classes. I create a 'dark' class, which I add and 
+                remove alternately, or <span class="highlight">toggle</span> 
+                everytime the button is clicked (which is very easy thanks to JS). In other words, my
+                containers have a default color selection, which is changed to a dark color when the 
+                dark class is added. You can also use JS to change the colors of the website.
+                <br><br>
+                Here's your challenge: <br><br>
+                <span class="challenge">
+                    Create a dark mode for your website.
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

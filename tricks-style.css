@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #131417;
+    color: #e5e5e5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainh{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    font-family: 'Rubik 80s Fade', cursive;
+}
+
+#mainh .letter{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    color: #131417;
+}
+
+#T{
+    animation: colorchange1 4s infinite;
+}
+
+@keyframes colorchange1{
+    0%{
+        color: rgb(113, 1, 204);
+    }
+    25%{
+        color: rgb(113, 1, 204);
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: red;
+    }
+}
+
+#R{
+    animation: colorchange2 4s infinite;
+}
+
+@keyframes colorchange2{
+    0%{
+        color: rgb(54, 54, 237);
+    }
+    25%{
+        color: rgb(54, 54, 237);
+    }
+    50%{
+        color: orange;
+    }
+    75%{
+        color: orange;
+    }
+}
+
+#I{
+    animation: colorchange3 4s infinite;
+}
+
+@keyframes colorchange3{
+    0%{
+        color: green;
+    }
+    25%{
+        color: green;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: yellow;
+    }
+}
+
+#C{
+    animation: colorchange4 4s infinite;
+}
+
+@keyframes colorchange4{
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: green;
+    }
+}
+
+#K{
+    animation: colorchange5 4s infinite;
+}
+
+@keyframes colorchange5{
+    0%{
+        color: orange;
+    }
+    25%{
+        color: orange;
+    }
+    50%{
+        color: rgb(54, 54, 237);
+    }
+    75%{
+        color: rgb(54, 54, 237);
+    }
+}
+
+#S{
+    animation: colorchange6 4s infinite;
+}
+
+@keyframes colorchange6{
+    0%{
+        color: red;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: rgb(113, 1, 204);
+    }
+    75%{
+        color: rgb(113, 1, 204);
+    }
+}
+
+.body{
+    padding:0.5rem;
+    margin-top: 1rem;;
+}
+
+.title{
+    text-align: left;
+    margin-left: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
+
+.content{
+    color: #878f9c;
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
