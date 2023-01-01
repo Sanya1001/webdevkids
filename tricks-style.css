@@ -175,7 +175,7 @@ a{
 }
 
 .content{
-    color: #878f9c;
+    color: #b1b1b1;
     text-align: left;
     margin: 1rem;
     padding: 1rem;
@@ -195,4 +195,17 @@ a{
 #part3 .content.dark{
     color: #131417;
     background-color: #e5e5e5;
+}
+
+#glow{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 10px #f6ffc3;
+    }
+    to{
+        text-shadow: 0 0 20px #f6ffc3, 0 0 30px #f6ffc3, 0 0 40px #f6ffc3, 0 0 50px #f6ffc3, 0 0 60px #f6ffc3;
+    }
 }
