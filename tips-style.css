@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #131417;  
+    color: #e5e5e5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainh{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Rubik 80s Fade', cursive;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(250, 249, 249, 0.2));
+}
+
+#mainh span{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    color: #e5e5e5;
+    animation: move 12s infinite;
+}
+
+@keyframes move {
+    0%{
+        letter-spacing: 5rem;
+    }
+    30%{
+        letter-spacing: 0rem;
+    }
+    60%{
+        letter-spacing: 0rem;
+    }
+    100%{
+        letter-spacing: 5rem;
+    }
+}
+
+#mainh{
+    animation: blink 12s infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255,255,255,0.3);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.body{
+    text-align: left;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.title{
+    color: #f27b9b;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+}
+
+.content{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+
+.highlight{
+    color: #eb7132;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;;
+}

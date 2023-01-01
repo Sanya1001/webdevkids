@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tips-style.css">
+    <script src="tips-script.js" defer></script>
+    <title>The WebDev Kids: Tips</title>
+</head>
+<body>
+    <div id="body">
+        <div id="mainh">
+            <span id="T">T</span>
+            <span id="I">I</span>
+            <span id="P">P</span>
+            <span id="S">S</span>
+        </div>
+        <div id="part1" class="body">
+            <div class="title">Flexbox</div>
+            <div class="content">
+                One of my favorite features of CSS is the
+                <span class="highlight">flexbox</span> . Whenever it is possible,
+                I always use flexbox to position my elements. It is very easy to use and 
+                inherently responsive. It reduces the need to write viewport specific designs.
+                In general, I find it easy to manipulate, especially when I have multiple elements
+                I want to control. In fact, I have found using a flexbox even solves my problems 
+                of centering elements!
+            </div>
+        </div>
+        <div id="part2" class="body">
+            <div class="title">Hidden Divs</div>
+            <div class="content">
+                Magic is all about <span class="highlight">illusions</span> and hiding things, and 
+                this is no different in web development! Want to show something only when the user 
+                clicks on a button? Use a hidden div! <br>
+                The idea is to create multiple overlapping divs, and then use JavaScript to hide and
+                show them when needed. Create everything you need, two versions of the same thing,
+                right on top of each other. Then, use JavaScript to hide one of them. My favorite
+                way to do this is using an <span class="highlight">active</span> class which I 
+                toggle as needed. When the active class is there, the div is visible, and when it is 
+                not, by default it is hidden, that is, its <span class="highlight">display</span> is 
+                none. <br>
+                This is also very useful in animation, along with a related property,
+                <span class="highlight">overflow</span> . 
+            </div>
+        </div>
+        <div id="part3" class="body">
+            <div class="title">Z-index</div>
+            <div class="content">
+                Another useful property is <span class="highlight">z-index</span> . This is used to
+                control the order in which elements are displayed- somewhat similar to layers, if 
+                you are familiar with some form of digital art software. Contrary to hidden divs,
+                this is useful when you want to display all of your overlapping elements. <br>
+                I use this a lot when I want to create the
+                <span class="highlight">moving background</span> effect! I have a 
+                video play on loop and place it behind my main content, using a lower z-index 
+                than the main content.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
