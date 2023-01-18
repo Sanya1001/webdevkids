@@ -73,3 +73,35 @@ a{
     font-size: 0.8rem;
     text-decoration: underline;
 }
+
+#warn{
+    color: rgb(249, 205, 92);
+}
+
+#sol .solhead{
+    color: #f27b9b;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+#sol .sol{
+    background-color: #e5e5e5;
+    color: #131417;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sol .solex{
+    display: none;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+pre code{
+    text-align: left;
+    margin: 0;
+    padding: 0%;
+}

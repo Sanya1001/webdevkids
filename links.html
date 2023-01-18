@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="links-script.js" defer></script>
     <link rel="stylesheet" href="links-style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js" defer></script>
     <title>The WebDev Kids: Links</title>
 </head>
 <body>
@@ -118,10 +120,161 @@
                 </ul>
             </div>
         </div>
+        <div id="part5" class="body">
+            <div class="title">Editors & Extensions</div>
+            <div class="content">
+                <ul class="list">
+                    <li>
+                        My absolute favorite editor is
+                        <a href="https://code.visualstudio.com/" class="link" target="_blank">
+                            Visual Studio Code</a>. 
+                            Tons of functionality and extensions to exploit, and it's free!
+                    </li>
+                    <li>
+                        Code formatting extension on VS Code:
+                        <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" class="link" target="_blank">
+                            Prettier</a>
+                    </li>
+                    <li>
+                        For viewing your webpage as you make it, on VSCode, I use 
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" class="link" target="_blank">
+                            Live Server</a>
+                        (There is also a built-in Open Preview option that you can use, 
+                        for a split screen view)
+                    </li>
+                    <li>
+                        An  integration I love using is 
+                        <a href="http://wakatime.com" class="link" target="_blank">WakaTime</a>!
+                        It tracks your coding sessions and gives you reports on how much time you spent,
+                        what languages you used, and more. <br>
+                        This website took me <span class="highlight">10 hours</span> to build from scratch!
+                        (Including writing the code, styling, and adding content)
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div id="sol" class="body">
             <div class="title">Solutions to Challenges</div>
             <div class="content">
+                <div id="warn">
+                    If you haven't looked at the challenges in the Tricks section yet,
+                    I would recommend you do that first. <br> <br>
+                    <a href="./tricks.html" class="link">See Challenges</a>
+                </div>
+                <br><br>
+                <div id="sol1">
+                    <div class="solhead">Responsive Design</div>
+                    <div class="sol">
+                        Click to View
+                    </div>
+                    <div class="solex">
+                        <pre>
+                            <code class="language-css line-numbers">
+                                /* Wrap everything in a container */
+                                #main-container{
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                }
+                                .child-container{
+                                    /* Each element */
+                                }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div id="sol2">
+                    <div class="solhead">Dark Mode</div>
+                    <div class="sol">
+                        Click to View
+                    </div>
+                    <div class="solex">
+                        First, you should have a button that toggles the dark mode on and off in 
+                        your HTML file.
+                        For your CSS file:
+                        <pre>
+                            <code class="language-css line-numbers">
+                                div{
+                                    background-color: #fff;
+                                    color: #000;
+                                }
+                                div .dark{
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            </code>
+                        </pre>
+                        For your JS file:
+                        <pre>
+                            <code class="language-js line-numbers">
+                                const btn = document.getElementById("theme-button");
+                                btn.addEventListener("click", () => {
+                                    body.classList.toggle("dark");
+                                });
+                            </code>
+                    </div>
+                </div>
+                <div id="sol3">
+                    <div class="solhead">Loading Page</div>
+                    <div class="sol">
+                        Click to View
+                    </div>
+                    <div class="solex">
+                        There are multiple ways to do this, but I will show you the way I usually do it.
+                        First, make two overlapping divs on the whole page: loading and the main page.
+                        Then include the following CSS:
+                        <pre>
+                            <code class="language-css line-numbers">
+                                #loading{
+                                    /* Loading page */
+                                }
+                                #main{
+                                    /* Main page */
+                                    display: none;
+                                }
+                            </code>
+                        </pre>
+                        Then, in your JS file, add the following:
+                        <pre>
+                            <code class="language-js line-numbers">
+                                const load = document.getElementById('loading');
+                                const main = document.getElementById('main');
+                                setTimeout(() =>{
+                                    load.style.display = "none";
+                                    main.style.display = "block";
+                                }, 1500);
+                                // 1500 is the time in milliseconds
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div id="sol4">
+                    <div class="solhead">The Glow Effect</div>
+                    <div class="sol">Click to view</div>
+                    <div class="solex">
+                        This one is pretty straightforward to think about. You just need to 
+                        manipulate the text shadow property of the element. Just include the following 
+                        in your CSS file:
+                        <pre>
+                            <code class="language-css line-numbers">
+                                #glow{
+                                    animation: glow 1s ease-in-out infinite alternate;
+                                }
+                                
+                                @keyframes glow{
+                                    from{
+                                        text-shadow: 0 0 10px #f6ffc3;
+                                    }
+                                    to{
+                                        text-shadow: 0 0 20px #f6ffc3, 0 0 30px #f6ffc3, 0 0 40px #f6ffc3, 0 0 50px #f6ffc3, 0 0 60px #f6ffc3;
+                                    }
+                                }
+                            </code>
+                        </pre>
 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
