@@ -77,5 +77,82 @@
             </a> !
         </div>
     </div>
+    <div id="part5" class="body">
+        <div class="title">Interesting CSS Basics</div>
+        <span class="beginner">(beginner)</span>
+        <div class="content">
+            Hi my SGWC friends! This section is for you! <br>
+            Read some of these tips to get started with CSS, and look these up on the internet 
+            if you want a better understanding. Which of these can you find these on CodeHS docs? ;)
+            <br>
+            I will be adding more tips as I think of them, so remember to check back sometimes.
+            I will also be adding some challenges for you to try out as you read these tips.
+            I promise they will be up soon!!
+            <br> <br>
+            <span class="beginner">&gt; Absolute Positioning</span> <br><br>
+            Absolute positioning is a way to position elements relative to the viewport. 
+            This is useful when you want to position an element in a specific place, 
+            regardless of the size of the viewport, or when you have scrolled. <br>
+            To use absolute positioning, you need to set the position of the element to 
+            <span class="highlight">absolute</span> . Then, you can use the 
+            <span class="highlight">top</span> , <span class="highlight">bottom</span> , 
+            <span class="highlight">left</span> , and <span class="highlight">right</span> properties
+            to position the element.
+            <br><br>
+            <span class="beginner"> &gt; Background Gradient</span> <br><br>
+            Using a gradient as a background is a great way to offer some change from the common
+            solid color background. I use 
+            <a href="http://cssgradient.io/" class="link">CSS Gradient</a> to generate 
+            my gradients. <br>
+            After you select your colors for your <span class="highlight">gradient</span>
+            , you can copy the CSS code and 
+            paste it in your file. Very easy! <br>
+            Looking at the code, can you tell how to 
+            <span class="highlight">write your own gradient</span> ? <br><br>
+            <span class="beginner"> &gt; Background Image</span> <br><br>
+            As I already said, backgrounds are important! What if you want your title to be 
+            displayed over a cool image? The <span class="highlight">background-image</span> 
+            property is what you are probably looking for! <br>
+            Find your favorite image and 
+            <span class="highlight">copy the URL</span> from right clicking the image 
+            (if you are using a local image, you can  use the path to the image). 
+            Then, use the background-image property to set the image as the 
+            background by putting the link in
+            <span class="highlight">url("link-here")</span> . <br>
+            background-image: url("https://www.example.com/image.jpg"); <br><br>
+            <span class="beginner" id="hoverr"> &gt; Hover</span> <br><br>
+            A CSS classic that you can find on almost every website- the text for links
+            change color when you hover over them! <br>
+            Write your CSS selector for the element you want to change as usual
+            (class/tag/id), and then add the <span class="highlight">":hover" pseudo-class</span> . 
+            Then, write the CSS properties you want to change when the user hovers over the 
+            element, which is usually color. <br> For example, if I want to change the color of
+            all links to red when the user hovers over them, I would write: <br>
+            a:hover { <br>
+                color: red; <br>
+            } <br>
+            Exactly like 
+            <a href="#hoverr" id="eglink" class="link">this link that does nothing</a>. <br> <br>
+            (<span class="highlight">Challenge</span>:
+            Can you make a link that does nothing? What do you think changed when you clicked on
+            the link? Hint: Look at the URL before and after) <br>
+            <span class="highlight">Note</span>: This feature does not work on mobile devices!
+            <br><br>
+            <span class="beginner"> &gt; Text Decoration</span> <br><br>
+            Text decoration is a way to add some flair to your text. You can use it to add
+            <span class="highlight">underline</span> , <span class="highlight">overline</span> ,
+            or <span class="highlight">line-through</span>, and other styles to your text.
+            This is actually a
+            <span class="highlight">shorthand property</span> for text-decoration-line, 
+            text-decoration-color, text-decoration-style, text-decoration-thickness. 
+            You can use a combination of the following options: <br>
+            underline, overline, line-through (Type of line)<br>
+            solid, double, dotted, wavy, dashed (Style of line) <br>
+            You can also add the color and thickness you want the line to be. <br>
+            For example, if I want a thick dashed underline to my text in red, I would write: <br>
+            text-decoration: underline dashed red 5px; <br>
+            <span id="tdeg">Like this line!</span>
+        </div>
+    </div>
 </body>
 </html>

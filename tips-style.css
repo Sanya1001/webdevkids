@@ -97,3 +97,21 @@ a{
     color: cyan;
     text-decoration: underline;
 }
+
+.beginner{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+.link{
+    color: cyan;
+    text-decoration: underline;
+}
+
+#eglink:hover{
+    color:red;
+}
+
+#tdeg{
+    text-decoration: underline dashed red 5px;
+}
