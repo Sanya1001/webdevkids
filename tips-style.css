@@ -115,3 +115,27 @@ a{
 #tdeg{
     text-decoration: underline dashed red 5px;
 }
+
+#breg{
+    background-color: #e5e5e5;
+    color: #131417;
+    border: solid;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
+#announcement1{
+    background-color: #480699;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#announcement1:hover{
+    cursor: progress;
+    color: #480699;
+    background-color: #e5e5e5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
